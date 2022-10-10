@@ -3,80 +3,99 @@
     <head>
     <meta charset="UTF-8">
     <title>Kartavtsev Gleb CV</title>
+        <link href="style.css" rel="stylesheet"/>
+
     </head>
     <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="https://sun9-4.userapi.com/impg/c857424/v857424903/11cab4/gY5vFeQKEBc.jpg?size=604x403&quality=96&sign=da6cd25108507ec3751331baf846bd43&type=album" alt="тут фотография моя">
-            </td>
-            <td>
-                <h1>Kartavtsev Gleb</h1>
-                <p>Я кто-то...</p>
-                <p>Я люблю играть в <strong>футбол</strong></p>
-            </td>
+    <div class="container">
+            <div class="info">
 
-        </tr>
+                <img src="https://sun9-4.userapi.com/impg/c857424/v857424903/11cab4/gY5vFeQKEBc.jpg?size=604x403&quality=96&sign=da6cd25108507ec3751331baf846bd43&type=album" alt="тут фотография моя" class="avatar">
 
-    </table>
+                <div class="info-text">
+                    <h1>Kartavtsev Gleb</h1>
+                        <p>Я кто-то...</p>
+                        <p>Я люблю <strong>программирование</strong></p>
+                        <p>Я обожаю учиться</p>
+                    <h4>Мои социальные сети</h4>
 
-        <hr>
+                    <a href="https://vk.com/gkmrm" target="_blank">vk</a>
+                    |
+                    <a href="https://t.me/gkmrm" target="_blank">telegram</a>
+                    |
+                    github
 
-    <h2>Мои социальные сети</h2>
-        <ul type="square">
-            <li><a href="vk.com/gkmrm" target="_blank">INS(tyt ssilka)</a></li>
-            <li>Telegram(tyt ssilka)</li>
+                </div>
+            </div>
 
-            
-        </ul>
-    <hr>
-    <h2>Мои увлечения</h2>
-        <ol>
-            <li>КИно</li>
-            <li>Books</li>
+        <div class="card bg-red">
+        <h2>Мои увлечения</h2>
+            <ol class="list">
+                <li>КИно</li>
+                <li>Books</li>
+            </ol>
+        </div>
 
-        </ol>
-    <hr>
-    <h2>Опыт работы</h2>
-    <table>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год работы</th>
-        </tr>
-        <tr>
-            <td>Красное и Белое</td>
-            <td>Администратор</td>
-            <td>2018-2022</td>
-        </tr>
-        <tr><td>ИП Картавцев Г.М.</td>
-            <td>Индивидуальный предриниматель</td>
-            <td>2017-2022</td></tr>
-        <tr></tr>
-        <tr></tr>
+        <div class="card bg-yellow">
+            <h2>Опыт работы</h2>
+            <table class="table">
 
-    </table>
-    <hr>
-    <h2>Pet-projects</h2>
-    <hr>
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Введите имя...">
+                <tr>
+                    <td>Красное и Белое</td>
+                    <td>Администратор</td>
+                    <td>2018-2022</td>
+                </tr>
+                <tr><td>Elemento.Home</td>
+                    <td>Marketing+Site</td>
+                    <td>2021-2022</td></tr>
+                <tr>
+                    <td>Ostryi</td>
+                    <td>Marketing+Site</td>
+                    <td>2019-2020</td></tr>
+                </tr>
+                <tr>
+                    <td>ИП Картавцев Г.М.</td>
+                    <td>Индивидуальный предриниматель</td>
+                    <td>2017-2022</td></tr>
+                </tr>
 
-        <br>
+            </table>
 
-        <label for="email">Ваш email</label>
-        <input type="text" id="email" placeholder="Введите email...">
+        </div>
+            <div class="card bg-green">
+            <h2>Pet-projects</h2>
+                <p>Мой проект 1</p>
+                <p>Мой проект 2</p>
+            </div>
 
-        <br>
+            <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Введите имя...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="text" id="email" placeholder="Введите email...">
+                    </div>
+                </div>
+                    <div class="form-group">
+                        <label for="text">Ваше сообщение</label>
+                        <textarea name="" id="text" cols=100% rows="2"></textarea>
+                </div>
 
-        <label for="text">Ваше сообщение</label>
-        <br>
-        <textarea name="" id="text" cols="30" rows="2"></textarea>
+            <input class="btn" type="submit" value="Связаться!">
+        </form>
+        </div>
+    <div class="position">
+        <div class="box">
 
-        <input type="submit" value="Связаться!">
-    </form>
+        </div>
+    </div>
+
+    </div>
     </body>
 </html>
 
